@@ -3,8 +3,9 @@ var equals = require('equals');
 module.exports = function (prev, next) {
 
     var diff = [];
-
     var indexCanOnlyBeFoundOnce = [];
+    var foundIndexes = [];
+
     var indexOfEquals = function (array, value) {
         var index = -1;
         array.forEach(function (el, i) {
@@ -16,9 +17,6 @@ module.exports = function (prev, next) {
         return index;
     };
 
-
-    var foundIndexes = [];
-
     prev.forEach(function (itemPrev, indexPrev) {
         var indexNext = indexOfEquals(next, itemPrev);
         if (indexNext >= 0) {
@@ -28,7 +26,6 @@ module.exports = function (prev, next) {
             oldIndex: indexPrev,
             newIndex: indexNext
         });
-
     });
 
     next.forEach(function (itemNext, indexNext) {
