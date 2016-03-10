@@ -1,0 +1,27 @@
+{
+  "name": "campsi-array-diff",
+  "version": "1.0.0",
+  "description": "Diff two arrays and find the closest changes to apply",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/campsi/array-diff.git"
+  },
+  "keywords": [
+    "array",
+    "diff",
+    "changes"
+  ],
+  "author": "Romain Bessuges <romainbessuges@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/campsi/array-diff/issues"
+  },
+  "homepage": "https://github.com/campsi/array-diff#readme",
+  "dependencies": {
+    "equals": "^1.0.1"
+  }
+}
