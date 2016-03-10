@@ -4,8 +4,9 @@ Diff two arrays and find the closest changes to apply.
 ## Usage
 Array diff takes two parameters : prev and next, which have to be of array type
 The function returns a list of changes. A change is a literal object with two properties, `oldIndex` and `newIndex` : 
-• If `oldIndex` equals -1, it means that the element wasn't in the `prev` array, and thus has been added to `next`.
-• If `newIndex` equals -1, it means that the element isn't in the `next` array, but was in the `prev`
+* If `oldIndex` equals -1, it means that the element wasn't in the `prev` array, and thus has been added to `next`.
+* If `newIndex` equals -1, it means that the element isn't in the `next` array, but was in the `prev`
+* If `newIndex` equals `oldIndex`, no change
 
 ## Example
 
